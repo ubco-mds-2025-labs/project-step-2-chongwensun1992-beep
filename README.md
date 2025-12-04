@@ -2,8 +2,8 @@
 
 ## Group Members
 - **Chongwen Sun**
-- **Inaara Rajwani**
-
+- **Yifa Zhao**
+- **Cho Wing Chan**
 ---
 
 # 1. Project Overview
