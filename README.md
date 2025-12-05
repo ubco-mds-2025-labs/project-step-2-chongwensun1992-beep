@@ -6,9 +6,7 @@
 
 -   **Yifa Zhao**
 
--   
-
-    ## **Cho Wing Chan**
+-   **Cho Wing Chan**
 
 # 1. Project Overview
 
@@ -37,8 +35,9 @@ We created at least four independent test classes in separate files:
 | `file_io_module_3/json_io.py` | `tests/test_json_io.py` | `TestJsonIO` |
 | `income.py` & `expense.py` | `tests/test_income_expense.py` | `TestIncomeExpense` |
 
-Additional non-required tests: - `tests/test_summary.py` -
-`tests/test_insights.py`
+Additional non-required tests: 
+- `tests/test_summary.py` 
+- `tests/test_insights.py`
 
 ------------------------------------------------------------------------
 
@@ -47,14 +46,18 @@ Additional non-required tests: - `tests/test_summary.py` -
 All test classes include multiple test cases with 4+ assertions each,
 covering:
 
--   Valid inputs\
--   Invalid inputs\
--   Exception handling\
--   Mocked file operations\
+-   Valid inputs
+-   Invalid inputs
+-   Exception handling
+-   Mocked file operations
 -   Branching logic
 
-Assertions used include: - `assertEqual` - `assertTrue` - `assertIn` -
-`assertRaises` - `mock.assert_called_once()`, etc.
+Assertions used include: 
+- `assertEqual` 
+- `assertTrue` 
+- `assertIn` 
+- `assertRaises` 
+- `mock.assert_called_once()`, etc.
 
 ------------------------------------------------------------------------
 
