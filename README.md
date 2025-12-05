@@ -66,9 +66,9 @@ Assertions used include:
 Across multiple test files, we demonstrated correct use of all unittest
 lifecycle methods:
 
--   `setUpClass()` for class-level initialization\
--   `setUp()` for fresh state per test\
--   `tearDown()` for cleanup\
+-   `setUpClass()` for class-level initialization
+-   `setUp()` for fresh state per test
+-   `tearDown()` for cleanup
 -   `tearDownClass()` for finalization
 
 ------------------------------------------------------------------------
