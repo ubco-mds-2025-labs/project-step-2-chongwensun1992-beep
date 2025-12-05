@@ -12,8 +12,8 @@
 
 This project step focuses on:
 
--   Implementing unit tests using Python’s `unittest` framework\
--   Enhancing the SmartBudget project with proper error handling\
+-   Implementing unit tests using Python’s `unittest` framework
+-   Enhancing the SmartBudget project with proper error handling
 -   Practicing collaborative development using Git branches and pull
     requests
 
