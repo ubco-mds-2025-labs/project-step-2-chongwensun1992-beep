@@ -1,3 +1,11 @@
+"""
+Test suite for the insights module of SmartBudget.
+
+This file checks the correctness of income and expense detail generation,
+using mocked _load_split() results to isolate logic from file I/O. The tests
+verify output structure, content formatting, and basic sanity properties.
+"""
+
 import unittest
 import logging
 from unittest.mock import patch
