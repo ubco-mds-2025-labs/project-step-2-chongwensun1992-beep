@@ -149,8 +149,8 @@ smartbudget/
 All requirements for **DATA 533 – Project Step 2** have been fully
 satisfied:
 
--   ✔ Four independent test classes\
--   ✔ Multiple test cases with ≥ four assertions\
--   ✔ Usage of unittest lifecycle methods\
--   ✔ Test suite included\
--   ✔ GitHub collaboration with branches, PRs, and shared contribution
+-   ✔ Four independent test classes
+-   ✔ Multiple test cases containing four or more assertions
+-   ✔ Proper use of unittest lifecycle methods
+-   ✔ A complete test suite implementation
+-   ✔ GitHub collaboration demonstrated through branches, pull requests, and shared contributions
