@@ -1,6 +1,6 @@
 # SmartBudget — FUNCTIONS.md (Final Version)
 
-This document outlines every module, class, and function within the SmartBudget package, providing a clear reference for structure and behavior. It supports transparency for reviewers, improves long-term maintainability, and ensures the project is fully prepared for evaluation.
+This document provides a complete reference to all modules, classes, and functions within the SmartBudget package. It is designed to give reviewers a clear overview of the system’s architecture, ensure full transparency of internal behaviors, and support long-term maintainability. The structure presented here reflects the final, evaluated version of the project and serves as the authoritative specification for all implemented features.
 
 ------------------------------------------------------------
 PACKAGE STRUCTURE OVERVIEW
