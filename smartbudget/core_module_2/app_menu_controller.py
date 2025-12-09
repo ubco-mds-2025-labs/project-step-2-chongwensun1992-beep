@@ -18,6 +18,17 @@ sys = FileIoDataStorageController()
 # ------------------ UI Menu ------------------ #
 
 def print_menu():
+    """
+    Displays the SmartBudget main menu.
+
+    This function prints a formatted list of all available user actions
+    in the SmartBudget CLI program. It does not take any arguments and
+    performs no computation—it simply shows the menu options whenever
+    the user returns to the main screen.
+
+    The menu includes actions for adding records, viewing summaries,
+    managing backup files, and visualizing expenses.
+    """
     print("====================================")
     print("       SmartBudget Main Menu        ")
     print("====================================")
