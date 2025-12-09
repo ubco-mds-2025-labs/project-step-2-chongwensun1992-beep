@@ -28,7 +28,15 @@ from smartbudget.file_io_module_3 import append_to_json
 
 
 class BudgetRecordController:
-    """Controller for managing financial records and user-facing operations."""
+    """
+    Controller class responsible for:
+    - Managing income and expense records
+    - Handling all user-facing operations (summary, details, plots)
+    - Creating and storing new financial records
+
+    This controller interacts with model classes (Income, Expense)
+    and with I/O helper functions such as append_to_json().
+    """
 
     def __init__(self):
         self.incomes = []
@@ -37,6 +45,13 @@ class BudgetRecordController:
     # ------------------ Display Functions ------------------ #
 
     def show_summary(self):
+        """
+        Display overall budget summary, including:
+        - Total income
+        - Total expenses
+        - Remaining balance
+        The actual calculations are handled by helper functions.
+        """
         print("\n=== Budget Summary ===")
         print("Total Income:", total_income())
         print("Total Expenses:", total_expenses())
@@ -44,6 +59,10 @@ class BudgetRecordController:
         print("=======================\n")
 
     def show_income_details(self):
+        """
+        Create a new expense record.
+        Logic mirrors add_income(), but includes category.
+        """
         print("\n=== Income Details ===")
         details = income_details()
         if not details:
