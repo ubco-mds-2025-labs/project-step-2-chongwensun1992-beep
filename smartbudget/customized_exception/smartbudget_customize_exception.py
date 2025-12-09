@@ -1,5 +1,21 @@
 class SmartBudgetError(Exception):
-    """SmartBudget project custom error type."""
+    """
+    Custom exception type for the SmartBudget project.
+
+    This class extends Python's built-in Exception and provides:
+        - A standardized project-specific error prefix ("[SmartBudget]")
+        - Optional contextual information to help identify the origin
+          or cause of the error (e.g., function name, invalid value)
+
+    Attributes
+    ----------
+    message : str
+        The formatted error message with a SmartBudget prefix.
+    context : any, optional
+        Additional context about where/how the error occurred.
+    """
+
+
 
     def __init__(self, message: str, context=None):
         super().__init__(message)
