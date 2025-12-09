@@ -123,7 +123,7 @@ All work was merged through PRs after review.
 
 ## ✔ Commit history demonstrates equal contribution
 
-Both group members’ commits are visible in the repository history and can be checked on github insight.
+Both group members’ commits are visible in the repository history and can be checked on github insights.
 
 ------------------------------------------------------------------------
 
