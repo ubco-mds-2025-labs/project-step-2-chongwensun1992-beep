@@ -1,3 +1,20 @@
+"""
+Test suite for summary functions in the SmartBudget analysis module.
+
+This file validates the core analytical computations such as total income,
+total expenses, and budget balance. The tests use unittest.mock to replace
+the internal _load_split() data-loading logic, ensuring that calculations
+are tested independently from file I/O. Logging is included to provide
+diagnostic output during the test lifecycle.
+
+Covers:
+- total_income() computation
+- total_expenses() and budget_balance() logic
+- Correct handling of mocked data sources
+- Type and sanity checks for numeric outputs
+"""
+
+
 import unittest
 import logging
 from unittest.mock import patch
