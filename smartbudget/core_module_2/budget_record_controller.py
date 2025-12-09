@@ -91,6 +91,15 @@ class BudgetRecordController:
     # ------------------ Record Creation ------------------ #
 
     def add_income(self):
+        """
+        Create a new income entry based on user input.
+
+        Workflow:
+        - Prompt user for income name, amount, source
+        - Construct Income object
+        - Save to internal list
+        - Write to JSON file for persistence
+        """
         print("\n--- Add Income ---")
         name = input("Enter income name: ")
         amount = float(input("Enter amount: "))
@@ -103,6 +112,15 @@ class BudgetRecordController:
         print("\n✔ Income added:", inc.describe(), "\n")
 
     def add_expense(self):
+        """
+        Create a new expense entry based on user input.
+
+        Workflow:
+        - Prompt user for expense name, amount, category
+        - Create Expense object
+        - Append to in-memory list
+        - Save to JSON file through storage helper
+        """
         print("\n--- Add Expense ---")
         name = input("Enter expense name: ")
         amount = float(input("Enter amount: "))
