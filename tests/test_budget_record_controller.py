@@ -1,3 +1,19 @@
+"""
+Test suite for BudgetRecordController.
+
+This file verifies the core behaviors of the controller responsible for
+creating Income and Expense records, collecting user input, and persisting 
+data via the JSON IO layer. Mocking is used to isolate file operations 
+and ensure that controller logic is tested independently from the IO system.
+
+Covers:
+- Income creation workflow
+- Expense creation workflow
+- Input handling via builtins.input
+- Calls to append_to_json() using unittest.mock
+"""
+
+
 import unittest
 from unittest.mock import patch
 from smartbudget.core_module_2.budget_record_controller import BudgetRecordController
