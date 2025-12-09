@@ -85,9 +85,16 @@ class FileIoDataStorageController:
     # --------------------------------------------------------
     def load_data(self, incomes: list, expenses: list):
         """
-        Loads records from a backup file and appends them into
-        the provided incomes/expenses lists.
-        """
+         Loads records from a backup file and appends them to the
+         provided incomes/expenses lists.
+
+         Parameters
+         ----------
+         incomes : list
+             Mutable list used by the system to store Income objects
+         expenses : list
+             Mutable list used by the system to store Expense objects
+         """
 
         filename = input("Enter filename to load: ").strip()
 
