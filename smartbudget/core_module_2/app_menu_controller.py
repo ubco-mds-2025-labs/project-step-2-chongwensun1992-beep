@@ -3,7 +3,7 @@ SmartBudget CLI Application Interface
 -------------------------------------
 """
 
-# ------------------ Imports ------------------ #
+# ------------------ Imports packages------------------ #
 
 from smartbudget.core_module_2.budget_record_controller import BudgetRecordController
 from smartbudget.core_module_2.file_io_data_controller import FileIoDataStorageController
@@ -35,9 +35,16 @@ def print_menu():
     print("====================================")
 
 
-# ------------------ Main Application Loop ------------------ #
+
 
 def run():
+    """
+    Main interactive loop for the SmartBudget CLI.
+
+    This function continuously displays the menu, receives user input,
+    and routes the user's choice to the appropriate controller method.
+    The loop ends only when the user selects option "0" (Exit).
+    """
     while True:
         print_menu()
         choice = input("Enter your choice: ").strip()
