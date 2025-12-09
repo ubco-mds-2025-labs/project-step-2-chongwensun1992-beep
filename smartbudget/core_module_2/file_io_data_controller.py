@@ -31,11 +31,18 @@ from smartbudget.file_io_module_3 import (
 
 
 class FileIoDataStorageController:
-    """High-level controller for SmartBudget's file-based storage operations."""
+    """
+    Controller responsible for all file-based operations in SmartBudget.
 
-    # --------------------------------------------------------
-    # Clear primary data file
-    # --------------------------------------------------------
+    Responsibilities:
+    - Clearing main data file (records.json)
+    - Saving records to user-specified backup files
+    - Loading backup files into memory
+    - Displaying available data files
+    - Deleting user-selected files
+
+    This controller abstracts the interaction with the file I/O helpers.
+    """
     def clear_data(self):
         confirm = input("⚠ Are you sure you want to CLEAR ALL DATA? (y/n): ").lower()
         if confirm == "y":
