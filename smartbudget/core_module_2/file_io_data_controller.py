@@ -138,6 +138,10 @@ class FileIoDataStorageController:
     # Delete user-selected backup file
     # --------------------------------------------------------
     def delete_backup_file(self):
+        """
+        Deletes a user-selected backup file from the storage directory.
+        Prevents deletion of the system file.
+        """
         filename = input("Enter filename to delete: ").strip()
 
         if filename == "records.json":
