@@ -73,6 +73,14 @@ class BudgetRecordController:
         print()
 
     def show_expense_details(self):
+        """
+        Display detailed information for all recorded expenses.
+
+        Steps:
+        - Retrieve list of expense descriptions using expense_details()
+        - If list is empty, notify user
+        - Otherwise print each expense in a readable format
+        """
         print("\n=== Expense Details ===")
         details = expense_details()
         if not details:
@@ -83,6 +91,10 @@ class BudgetRecordController:
         print()
 
     def show_expense_plot(self):
+        """
+        Generate and display a visualization (bar chart) of expenses grouped by category.
+        The plotting function is provided by the insights/visualization module.
+        """
         print("\n=== Expense Visualization ===")
         print("Generating chart...")
         plot_expense_by_category()
