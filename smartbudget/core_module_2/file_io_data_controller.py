@@ -59,6 +59,10 @@ class FileIoDataStorageController:
     # Save current records to user-specified file
     # --------------------------------------------------------
     def save_data(self):
+        """
+              Saves the current system records from 'records.json' into a
+              user-specified backup file. Prevents overwriting system file.
+              """
         filename = input("Enter filename to save (e.g., backup.json): ").strip()
 
         if filename == "records.json":
