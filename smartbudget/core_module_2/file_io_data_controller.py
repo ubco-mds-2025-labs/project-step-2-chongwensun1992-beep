@@ -37,6 +37,10 @@ class FileIoDataStorageController:
     # Clear primary data file
     # --------------------------------------------------------
     def clear_data(self):
+        """
+        Clears the system's main JSON record file (records.json).
+        A confirmation prompt is used to prevent accidental data loss.
+        """
         confirm = input("⚠ Are you sure you want to CLEAR ALL DATA? (y/n): ").lower()
         if confirm == "y":
             clear_json()  # Resets records.json
