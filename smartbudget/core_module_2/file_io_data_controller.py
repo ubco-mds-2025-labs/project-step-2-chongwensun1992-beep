@@ -119,6 +119,10 @@ class FileIoDataStorageController:
     # Display available backup files
     # --------------------------------------------------------
     def show_files(self):
+        """
+        Prints all files located inside the 'files/' directory,
+        excluding the system file (records.json).
+        """
         print("\nFiles in 'files/' directory:")
 
         files = [f for f in list_files() if f != "records.json"]
